@@ -1,0 +1,103 @@
+
+footer {
+    padding: 60px 0 20px 0; /* Dá respiro ao redor de todo o footer */
+    background-color: #ffffff;
+}
+
+/* --- SEÇÃO SUPERIOR --- */
+.footer-top {
+    align-items: flex-start; /* Alinha as colunas no topo, e não no meio */
+    margin-bottom: 60px; /* Espaço entre as colunas e a linha do copyright */
+    flex-wrap: wrap;
+}
+
+/* Coluna 1 */
+.footer-logo-col {
+    max-width: 320px; /* Limita a largura para quebrar o texto como na Imagem 1 */
+}
+
+.footer-logo {
+    margin-bottom: 25px;
+}
+
+.footer-desc {
+    margin-top: 0;
+    margin-bottom: 50px;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.social-links a {
+    margin-right: 50px; /* Espaçamento entre os ícones sociais */
+}
+
+/* Colunas 2 e 3 */
+.footer-links-container {
+    gap: 120px; /* Espaço generoso entre "Pages" e "Contact" */
+    flex-wrap: wrap;
+}
+
+.footer-col ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /* Remove bolinhas da lista */
+}
+
+.footer-col li, 
+.footer-col p {
+    margin: 0 0 25px 0;
+    font-size: 16px;
+    color: #4D5053; /* Cinza escuro para os textos das colunas */
+}
+
+.footer-col h3 {
+    font-size: 20px;
+    margin: 0 0 30px 0;
+    font-family: 'DM Serif Display', serif; /* Fonte serifada baseada na imagem */
+}
+
+.footer-col a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.footer-col a:hover {
+    color: #0C70F2; /* Azul da marca no hover */
+}
+
+.footer-contact-col p {
+    line-height: 1.8;
+}
+
+/* --- SEÇÃO INFERIOR --- */
+.footer-bottom {
+    border-top: 1px solid #EAEAEA; /* Linha cinza divisória */
+    padding-top: 25px; /* Espaço entre a linha e o texto/bandeiras */
+}
+
+.footer-copy {
+    margin: 0;
+    font-size: 16px;
+}
+
+.margin-left-small {
+    margin-left: 15px; /* Margem específica para afastar as bandeiras */
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .footer-links-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
