@@ -1,0 +1,32 @@
+.hero {
+    background-image: url("../../public/hero.svg");
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    padding: 50px;
+    border-radius: 70px
+}
+
+.hero h1 {
+    font-size: 65px;
+    margin-bottom: 125%;
+
+}
+
+.hero-text {
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+
+    .hero-text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+ 
+    .hero h1 {
+        font-size: 50px;
+    }
+}

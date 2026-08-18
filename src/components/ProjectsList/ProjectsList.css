@@ -1,0 +1,68 @@
+.projects-section {
+    margin: 150px 0;
+    text-align: center;
+}
+
+.projects-hero {
+    margin: 0 auto 100px auto;
+    max-width: 767px;
+}
+
+.projects-hero h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.projects-hero p {
+    font-size: 22px;
+    margin: 10px 0 0 0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px 22px;
+}
+
+/* --- AJUSTES NOS CARDS --- */
+.projects-card .thumb {
+    background-color: #f2f2f2; /* Adicionado o fundo cinza claro */
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px; /* Reduzido levemente para bater com a referência */
+    height: 380px; /* Ajustada a altura do retângulo superior */
+    width: 100%;
+}
+
+.projects-card h3 {
+    font-size: 22px;
+    margin: 16px 0 6px 0;
+    color: #1a1a1a;
+}
+
+.projects-card p {
+    font-size: 15px;
+    color: #666666; /* Tom cinza suave para o local */
+    margin: 0 0 12px 0;
+}
+
+/* Ícone de Like abaixo do texto */
+.projects-card .icon-like {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}

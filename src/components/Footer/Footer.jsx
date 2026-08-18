@@ -16,7 +16,7 @@ function Footer() {
             <div className="container">
                 
                 {/* --- SEÇÃO SUPERIOR (Colunas) --- */}
-                <div className="d-flex jc-space-between footer-top">
+                <div className="d-flex jc-space-between footer-top .mobile-fd-column">
                     
                     {/* Coluna 1: Logo, Descrição e Redes */}
                     <div className="footer-logo-col">
@@ -34,7 +34,7 @@ function Footer() {
                     <div className="d-flex footer-links-container">
                         
                         {/* Coluna 2: Pages */}
-                        <div className="footer-col">
+                        <div className="footer-col .mobile-fd-column">
                             <h3>Pages</h3>
                             <ul>
                                  <li><Link to="/">Home</Link></li>
