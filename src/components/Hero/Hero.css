@@ -4,13 +4,12 @@
     background-position: center;
     height: 700px;
     padding: 50px;
-    border-radius: 70px
+    border-radius: 70px;
 }
 
 .hero h1 {
     font-size: 65px;
     margin-bottom: 125%;
-
 }
 
 .hero-text {
