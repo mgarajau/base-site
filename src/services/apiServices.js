@@ -6,7 +6,7 @@ export const getApiData = async (endpoint, params) => {
         })
 
         if (!response.ok) {
-           console.error(`HTTP error! status: ${response.status}`);
+           console.error(`Error ${response.status}`);
         }
 
         const data = await response.json();
@@ -14,6 +14,6 @@ export const getApiData = async (endpoint, params) => {
     }
 
     catch (error) {
-        console.error('Error fetching API data:', error);
+        console.error('Catch error:', error);
     }
 }
